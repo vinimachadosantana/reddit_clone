@@ -28,6 +28,7 @@ class CommunitiesController < ApplicationController
 
   def set_community
     @community = Community.find(params[:id])
+    @posts = Post.all
   end
 
   def community_values
